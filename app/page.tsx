@@ -1,4 +1,4 @@
-import { Share2 } from "lucide-react"
+import { Share2, Mail, Phone, Copy, Github, Twitter, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Header from "../header"
@@ -71,6 +71,20 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
+
+      {/* Work Experience Section */}
+      <section className="py-16 px-8 bg-gray-800">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center mb-8">
+            <h2 className="text-5xl font-light text-gray-400 mr-8">work</h2>
+            <div className="flex-1 h-px bg-gray-500"></div>
+          </div>
+          <p className="text-gray-300 text-lg leading-relaxed max-w-3xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus
+            dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+          </p>
+        </div>
+      </section>
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6">
@@ -256,6 +270,56 @@ export default function Portfolio() {
             <div className="border-2 border-gray-300 rounded-lg p-6 flex flex-col items-center justify-center aspect-square bg-white hover:shadow-md transition-shadow">
               <div className="text-3xl mb-3 italic font-bold">Sass</div>
               <span className="font-medium text-gray-900">Sass/Scss</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8">
+            <Badge variant="secondary" className="bg-gray-200 text-gray-700 px-4 py-2 text-sm font-medium">
+              Get in touch
+            </Badge>
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-medium text-gray-700 mb-12 leading-relaxed max-w-3xl mx-auto">
+            {
+              "What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect."
+            }
+          </h2>
+
+          <div className="space-y-6 mb-12">
+            <div className="flex items-center justify-center gap-4">
+              <Mail className="h-6 w-6 text-gray-600" />
+              <span className="text-2xl font-semibold text-gray-900">1205.mcos@gmail.com</span>
+              <Button variant="ghost" size="icon" className="h-8 w-8">
+                <Copy className="h-4 w-4 text-gray-600" />
+              </Button>
+            </div>
+
+            <div className="flex items-center justify-center gap-4">
+              <Phone className="h-6 w-6 text-gray-600" />
+              <span className="text-2xl font-semibold text-gray-900">+91 8980500565</span>
+              <Button variant="ghost" size="icon" className="h-8 w-8">
+                <Copy className="h-4 w-4 text-gray-600" />
+              </Button>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-gray-600 mb-4">You may also find me on these platforms!</p>
+            <div className="flex justify-center gap-4">
+              <Button variant="ghost" size="icon" className="h-10 w-10">
+                <Github className="h-6 w-6 text-gray-600" />
+              </Button>
+              <Button variant="ghost" size="icon" className="h-10 w-10">
+                <Twitter className="h-6 w-6 text-gray-600" />
+              </Button>
+              <Button variant="ghost" size="icon" className="h-10 w-10">
+                <Linkedin className="h-6 w-6 text-gray-600" />
+              </Button>
             </div>
           </div>
         </div>

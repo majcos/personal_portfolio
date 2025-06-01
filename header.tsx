@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <nav className="bg-white py-6 px-8 border-b border-gray-100">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-12">
+        <div className="flex items-center space-x-8">
           <a href="#about" className="text-black font-medium hover:opacity-70 transition-opacity">
             ABOUT ME
           </a>
@@ -15,10 +15,10 @@ export default function Header() {
         </div>
 
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <h1 className="text-4xl font-bold tracking-wide">MAJ COS</h1>
+          <h1 className="text-5xl font-bold tracking-wide">MAJ COS</h1>
         </div>
 
-        <div className="flex items-center space-x-12">
+        <div className="flex items-center space-x-6">
           <a href="#linkedin" className="text-black font-medium hover:opacity-70 transition-opacity">
             LINKEDIN
           </a>
